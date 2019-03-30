@@ -1,0 +1,15 @@
+import { Component, OnInit, Input } from '@angular/core';
+
+@Component({
+  selector: 'app-logistics',
+  templateUrl: './logistics.component.html',
+  styleUrls: ['./logistics.component.css']
+})
+export class LogisticsComponent implements OnInit {
+  @Input() title = '';
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}

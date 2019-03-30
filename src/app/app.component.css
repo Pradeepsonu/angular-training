@@ -1,0 +1,20 @@
+.parent {
+    background-color: 9FBCF4;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.child {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%)
+}
+.main-content{
+    background-color: #9fbcf4;
+    min-height: 100vh;
+    min-width: 100vh;
+}

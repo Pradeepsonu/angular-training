@@ -1,0 +1,31 @@
+<app-header [title]="'Users'"></app-header>
+
+<div class="row" style="padding:20px;background-color:purple;">
+
+  <div class=" col-4">
+
+    <app-statscard [count]="users.length" [title1]="'Total'" [iconClass]="'fas fa-users'" [color]="'purple'">
+    </app-statscard>
+  </div>
+
+
+  <div class="col-4">
+
+    <app-statscard [count]="getActiveCount()" [title1]="'Active'" [iconClass]="'fas fa-user'" [color]="'green'">
+    </app-statscard>
+
+  </div>
+  <div class="col-4">
+
+    <app-statscard [count]="getInActiveCount()" [title1]="'Inactive'" [iconClass]="'fas fa-user'" [color]="'red'">
+    </app-statscard>
+
+  </div>
+</div><br>
+<div class="row">
+  <div class="col-12">
+    <app-usertable [data]="users" [tableHeader]="tableHeader"></app-usertable>
+  </div>
+</div><br>
+<button class="btn btn-outline-success" style="margin-left:35%" (click)="navigatetoUser(15)">navigate to
+  User</button>

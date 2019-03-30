@@ -1,0 +1,27 @@
+<nav class="nav-side-menu" id="sidenav">
+
+  <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+  <div class="menu-list">
+    <ul id="menu-content" class="menu-content collapse out" style="list-style-type:none">
+      <li>
+        <button class="btn" (click)="dashboard()">Dashboard</button>
+      </li>
+      <li data-toggle="collapse">
+        <button class="btn" (click)="users()">User</button>
+      </li>
+
+      <li data-toggle="collapse">
+        <button class="btn" (click)="products()">Products</button>
+      </li>
+
+
+      <li data-toggle="collapse">
+        <button class="btn" (click)="addproducts()">Add Product</button>
+      </li>
+
+      <li data-toggle="collapse">
+        <button class="btn" (click)="signout()">Sign Out</button>
+      </li>
+    </ul>
+  </div>
+</nav>

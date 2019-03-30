@@ -1,0 +1,67 @@
+<app-header [title]="'Products'" style="margin-left:0px"></app-header>
+<div class="row" style="padding:20px;background-color:purple;height:150px;margin-left: 0px">
+    <div class=" col-4">
+
+        <app-statscard [count]="50" [title1]="'Total'" [iconClass]="'fas fa-list-ol'" [color]="'blue'"></app-statscard>
+    </div>
+
+
+    <div class="col-4">
+
+        <app-statscard [count]="30" [title1]="'Stock'" [iconClass]="'fas fa-archive'" [color]="'red'">
+        </app-statscard>
+
+    </div>
+    <div class="col-4">
+
+        <app-statscard [count]="20" [title1]="'Sold'" [iconClass]="'fab fa-opencart'" [color]="'green'">
+        </app-statscard>
+
+    </div>
+</div><br><br>
+
+<div class="row" style="margin-left:0px">
+    <div class="col-4">
+
+        <app-productdetails [srcUrl]="'assets/lap.jpg'" [title1]="'Laptop'" [price]="'Rs.35000'">
+        </app-productdetails>
+
+    </div>
+
+    <div class="col-4">
+
+        <app-productdetails [srcUrl]="'assets/Phone.png'" [title1]="'Mobile Phone'" [price]="'Rs.20000'">
+        </app-productdetails>
+
+    </div>
+
+    <div class="col-4">
+
+        <app-productdetails [srcUrl]="'assets/headphone.jpg'" [title1]="'Headphones'" [price]="'Rs.1000'">
+        </app-productdetails>
+
+    </div>
+</div>
+
+<div class="row" style="margin-left:0px">
+    <div class="col-4">
+
+        <app-productdetails [srcUrl]="'assets/cam.jpg'" [title1]="'Camera'" [price]="'Rs.30000'">
+        </app-productdetails>
+    </div>
+    <div class="col-4">
+
+        <app-productdetails [srcUrl]="'assets/watch.png'" [title1]="'Watches'" [price]="'Rs.1000'">
+        </app-productdetails>
+    </div>
+    <div class="col-4">
+
+        <app-productdetails [srcUrl]="'assets/tshirt.jpg'" [title1]="'T-shirt'" [price]="'Rs.300'">
+        </app-productdetails>
+
+    </div>
+</div>
+<a class="btn btn-success" routerLink="add">Add Products</a><br>
+
+
+<app-usertable [data]="products" [tableHeader]="tableHeader"></app-usertable>
